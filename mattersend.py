@@ -162,7 +162,7 @@ def main():
     args = parser.parse_args()
 
     # CONFIG file
-    config = configparser.SafeConfigParser()
+    config = configparser.ConfigParser()
     try:
         if args.config:
             config.read(args.config)
