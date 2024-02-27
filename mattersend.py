@@ -208,7 +208,7 @@ def main():
         (mime, _) = mimetypes.guess_type(args.file)
         basename = os.path.basename(args.file)
 
-        with open(args.file, 'rU') as f:
+        with open(args.file, 'r') as f:
             message = f.read()
 
     if args.tabular:
